@@ -1,147 +1,68 @@
 #include <iostream>
 #include <math.h>
 
-int main()
+int main() 
 {
-//1
-    std::cout << 3.14 << std::endl;
-    //////////////////////////////////////
-//2
-    std::cout <<1<<" "<<13<<" "<<49<< std::endl;
-    /////////////////////////////////////
-//3
-    char c = 0;
-    std::cout <<"enter symbols"<< std::endl;
-    std::cin >> c;
-    std::cout <<1<<c<<13<<c<<49<< std::endl;
-    /////////////////////////////////////
-//4
-    int a = 0;
-    int b = 0;
-    int d = 0;
-
-    std::cout <<"enter numbers"<< std::endl;
-    std::cin >> a >> b >> d;
-    std::cout <<a<<"  "<<b<<"  "<<d<< std::endl;
-    //////////////////////////////////////
-//5
-    double e = 0;
+    double pi = 3.14;
+    std::cout << pi << std::endl;
+    std::cout << 1 << ' ' << 13 << ' ' << 49 << std::endl;
+    char b;
+    std::cin >> b;
+    std::cout << 1 << b << 13 << b << 49 << std::endl;
+    std::cout << "Enter numbers" << std::endl;
+    int k = 0;
+    int n = 0;
+    int h = 0;
+    std::cin >> k >> n >> h;
+    std::cout << k << ' ' << ' ' << n << ' ' << ' ' << h << std::endl;
+    double a = 0;
+    std::cout << "Enter a for: x=12a^2 + 7a - 12" << std::endl;
+    std::cin >> a;
+    std::cout << "Result:" << 12 * a*a + 7 * a - 12 << std::endl;
     double x = 0;
-    double y = 0;
-    std::cout <<"enter e"<< std::endl;
-    std::cin >> e;
-    x=12*e*e + 7*e - 12;
-    std::cout <<e<< std::endl;
-    y=3*x*x*x + 4*x*x - 11*x;
-    std::cout <<y<< std::endl;
-    /////////////////////////////////////
-
-//6
-    double v = 0;
+    std::cout << "Enter x for: y=3x^3 + 4x^2 - 11x + 1" << std::endl;
+    std::cin >> x;
+    std::cout << "Result:" << 3 * x*x*x + 4 * x*x - 11 * x + 1 << std::endl;
+    double V = 0;
     double m = 0;
-    double p = 0;
-
-
-    std::cout <<"enter mass and volume"<< std::endl;
-    std::cin >> m >> v;
-    p=m/v;
-    std::cout <<p<< std::endl;
-    /////////////////////////////////////
-
-//7
-    double q = 0;
-    double w = 0;
-    double r = 0;
-    //qw + r = 0;
-    std::cout <<"enter q and r"<< std::endl;
-    std::cin >> q >> r;
-    w=(-r)/q;
-    std::cout <<w<< std::endl;
-    /////////////////////////////////////
-    
-//8
-    double x1 = 0;
-    double x2 = 0;
-    double y1 = 0; 
-    double y2 = 0;
-    double l = 0;
-    std::cout <<"enter the coordinates"
-            << "x1= "
-            << "y1= " 
-            << "x2= "
-            << "y2= "
-            << std::endl;
-     std::cin >> x1 >> y1 >> x2 >> y2;
-    l=(x1-x2)*(x1-x2)+(y1+y2)*(y1+y2);
-    sqrt(l);
-    std::cout << "length between points = "<<l<< std::endl;
-    ////////////////////////////////////////
-    
-//9
+    std::cout << "Enter V and m " << std::endl;
+    std::cin >> V >> m;
+    std::cout << "p = " << V / m << std::endl;
     double A = 0;
     double B = 0;
-    double h = 0;
-    double g = 0;
-    double P = 0; 
-    double u = 0;
-    std::cout << "enter the length of a long side"<< std::endl;
-    std::cin >> A;
-    std::cout << "enter the length of a shor side" << std::endl;
-    std::cin >> B;
-    u=(A-B)/2;
-    std::cout <<u<< std::endl;
-    std::cout << "enter the high"<< std::endl;
-    std::cin >> h;
-    g=sqrt(h*h+u*u);    
-    std::cout <<g<< std::endl;
-    P=A+B+g*g;
-    std::cout <<"the perimetr = "<<P<< std::endl;
-    /////////////////////////////////////////////
-    
-//10
-    double R = 0;
-    double R0 = 0;
-    double pi = 3.14;
-    double S1 = 0;
-    double S2 = 0;
-    double S3 = 0;
-    std::cout << "enter the radius of a big round" << std::endl;
-    std::cin >> R;
-    std::cout << "ener the radius of a small round" << std::endl;
-    std::cin >> R0;
-    S1=pi*R*R;
-    S2=pi*r*r;
-    S3=S1-S2;
-    std::cout << "the square of a ring = "<<S3<< std::endl;
-    /////////////////////////////////////////
-
-//11 
-    double L = 0;
-    double V = 0;
-    double S = 0;
-    std::cout <<"enter the length of a side"<< std::endl;
-    std::cin >> L;
-    V=L*L*L;
-    S=L*L*6;
-    std::cout << "the volume of the cube = "<<V
-            <<" and the square of a cube = " <<S
-            << std::endl;
-    ////////////////////////////////////////
-    
-//12
-        double k = 0;
-    double per = 0;
-    std::cout <<" enter the length of a side"<< std::endl;
-    std::cin >> k;
-    per=k*4;
-    std::cout <<"perimetr = "<<per<< std::endl;
-    //////////////////////////////////////
-    
-//13 
-    double R1 = 0; 
-    double D = 0;
-    std::cout <<" enter the radius "<< std::endl;
-    std::cin >> R1;
-    D=2*R1;
-    std::cout <<"the diameter of the circle = "<<D<< std::endl; 
-    }
+    std::cout << "Enter a, b for: ax + b = 0, a <> 0 " << std::endl;
+    std::cin >> A >> B;
+    std::cout << -B / A << std::endl;
+    double X1 = 0;
+    double X2 = 0;
+    double Y1 = 0;
+    double Y2 = 0;
+    std::cout << "Enter x1, y1, x2, y2" << std::endl;
+    std::cin >> X1 >> Y1 >> X2 >> Y2;
+    std::cout << "Result: " << sqrt((X2 - X1)*(X2 - X1)) << std::endl;
+    double A1 = 0;
+    double A2 = 0;
+    double H = 0;
+    std::cout << "Enter A1, A2, H" << std::endl;
+    std::cin >> A1 >> A2 >> H;
+    std::cout << "Result: " << (A1 + A2)*H*0.5 << std::endl;
+    double R1 = 0;
+    double R2 = 0;
+    std::cout << "Enter R1, R2" << std::endl;
+    std::cin >> R1 >> R2;
+    std::cout << "Result: " << pi*R1*R1 - pi*R2*R2 << std::endl;
+    double A0 = 0;
+    std::cout << "Enter A" << std::endl;
+    std::cin >> A0;
+    std::cout << "V= " << A0*A0*A0 << std::endl;
+    std::cout << "S=" << 4 * A0*A0 << std::endl;
+    double A01 = 0;
+    std::cout << "Enter A" << std::endl;
+    std::cin >> A01;
+    std::cout << "P= " << A01*sqrt(2) << std::endl;
+    double R01 = 0;
+    std::cout << "Enter R" << std::endl;
+    std::cin >> R01;
+    std::cout << "L= " << R01*2*pi << std::endl;
+    return 0;
+}
