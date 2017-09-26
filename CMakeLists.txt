@@ -5,6 +5,10 @@ include_directories(SYSTEM
 )
 
 # enum your files
+add_executable(executable
+  main.cpp
+
+)
 
 
 
