@@ -1,18 +1,11 @@
+cmake_minimum_required (VERSION 2.8)
 
-language: cpp
+include_directories(SYSTEM
+    ./
+)
 
-notifications:
-  email: false
+# enum your files
 
-matrix:
-  include:
-    - os: linux
-      compiler: g++-5
-      env: COMPILER=g++ -std=c++11
 
-script:
-  - chmod 777 ./cpplint.py
-  - ( for file in $(find . -name "*.cpp"); do ./cpplint.py $file || exit; done );
-  - mkdir build && cd build
-  - cmake .. && make
-#  - ./executable
+
+target_link_libraries(executable)
