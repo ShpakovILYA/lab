@@ -5,10 +5,9 @@ include_directories(SYSTEM
 )
 
 # enum your files
-add_executable(executable
-  lab.cpp
+add_executable(executabl
+    lab.cpp
 )
-
 
 
 target_link_libraries(executable)
