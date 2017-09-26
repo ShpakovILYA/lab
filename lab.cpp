@@ -1,8 +1,7 @@
 #include <iostream>
 #include <math.h>
 
-int main() 
-{
+int main() {
     double pi = 3.14;
     std::cout << pi << std::endl;
     std::cout << 1 << ' ' << 13 << ' ' << 49 << std::endl;
